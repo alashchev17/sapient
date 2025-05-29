@@ -10,28 +10,34 @@ jobs:
   build-and-test:
     name: Build and Test
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        
+
+      - name: Install and enable Corepack
+        run: |
+          npm i -g corepack@0.32.0 --force
+          corepack enable
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: 'yarn'
-          
+      - run: corepack enable
+
       - name: Install dependencies
         run: yarn install --immutable
-        
+
       - name: Lint
         run: yarn lint
-        
+
       - name: Build packages
         run: yarn build
-        
+
       - name: Run tests
         run: yarn test
-        
+
       - name: Check peer dependencies
         run: yarn packages:check
