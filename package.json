@@ -14,9 +14,9 @@
   ],
   "scripts": {
     "build": "yarn workspaces foreach -ptA run build",
-    "build:packages": "yarn workspaces foreach -ptA --include '@sapient/*' run build",
+    "build:packages": "yarn workspaces foreach -ptA --include '@sapiently/*' run build",
     "clean": "yarn workspaces foreach -ptA run clean && rimraf node_modules .yarn",
-    "clean:packages": "yarn workspaces foreach -ptA --include '@sapient/*' run clean",
+    "clean:packages": "yarn workspaces foreach -ptA --include '@sapiently/*' run clean",
     "dev": "yarn build:packages && yarn start:storybook",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
@@ -25,8 +25,8 @@
     "changeset": "changeset",
     "version": "changeset version",
     "release": "yarn build && changeset publish",
-    "start:storybook": "yarn workspace @sapient/storybook start",
-    "build:storybook": "yarn workspace @sapient/storybook build",
+    "start:storybook": "yarn workspace @sapiently/storybook start",
+    "build:storybook": "yarn workspace @sapiently/storybook build",
     "packages:check": "node scripts/check-peer-deps.js",
     "packages:fix": "node scripts/fix-peer-deps.js"
   },

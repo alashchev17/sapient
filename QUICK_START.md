@@ -4,13 +4,13 @@
 
 ```bash
 # Using npm
-npm install @sapient/theme @sapient/button
+npm install @sapiently/theme @sapiently/button
 
 # Using yarn
-yarn add @sapient/theme @sapient/button
+yarn add @sapiently/theme @sapiently/button
 
 # Using pnpm
-pnpm add @sapient/theme @sapient/button
+pnpm add @sapiently/theme @sapiently/button
 ```
 
 ## Basic Setup
@@ -18,8 +18,8 @@ pnpm add @sapient/theme @sapient/button
 ```tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { SapientProvider } from '@sapient/theme';
-import { Button } from '@sapient/button';
+import { SapientProvider } from '@sapiently/theme';
+import { Button } from '@sapiently/button';
 
 function App() {
   return (
@@ -41,7 +41,7 @@ root.render(<App />);
 ### Buttons
 
 ```tsx
-import { Button } from '@sapient/button';
+import { Button } from '@sapiently/button';
 
 // Different variants
 <Button variant="primary">Primary</Button>
@@ -65,7 +65,7 @@ import { Button } from '@sapient/button';
 ## Customizing Theme
 
 ```tsx
-import { SapientProvider } from '@sapient/theme';
+import { SapientProvider } from '@sapiently/theme';
 
 const myTheme = {
   colors: {
@@ -86,11 +86,7 @@ const myTheme = {
 };
 
 function App() {
-  return (
-    <SapientProvider theme={myTheme}>
-      {/* Your app */}
-    </SapientProvider>
-  );
+  return <SapientProvider theme={myTheme}>{/* Your app */}</SapientProvider>;
 }
 ```
 
@@ -99,7 +95,7 @@ function App() {
 All components are fully typed. You get IntelliSense for all props:
 
 ```tsx
-import { Button, ButtonProps } from '@sapient/button';
+import { Button, ButtonProps } from '@sapiently/button';
 
 const MyButton: React.FC<ButtonProps> = (props) => {
   return <Button {...props} />;

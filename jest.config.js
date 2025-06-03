@@ -1,15 +1,12 @@
 module.exports = {
   roots: ['<rootDir>/packages'],
   testEnvironment: 'jsdom',
-  testMatch: [
-    '**/__tests__/**/*.+(ts|tsx|js)',
-    '**/?(*.)+(spec|test).+(ts|tsx|js)',
-  ],
+  testMatch: ['**/__tests__/**/*.+(ts|tsx|js)', '**/?(*.)+(spec|test).+(ts|tsx|js)'],
   transform: {
     '^.+\\.(ts|tsx)$': ['babel-jest', { configFile: './babel.config.js' }],
   },
   moduleNameMapper: {
-    '^@sapient/(.*)$': '<rootDir>/packages/$1/src',
+    '^@sapiently/(.*)$': '<rootDir>/packages/$1/src',
   },
   setupFilesAfterEnv: ['@testing-library/jest-dom'],
   collectCoverageFrom: [

@@ -22,22 +22,26 @@ Sapient is a modern design system implementation for React, built with accessibi
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/your-org/sapient.git
 cd sapient
 ```
 
 2. Install dependencies:
+
 ```bash
 yarn install
 ```
 
 3. Build all packages:
+
 ```bash
 yarn build
 ```
 
 4. Start Storybook:
+
 ```bash
 yarn start:storybook
 ```
@@ -75,8 +79,8 @@ sapient/
 ### Basic Setup
 
 ```tsx
-import { SapientProvider } from '@sapient/theme';
-import { Button } from '@sapient/button';
+import { SapientProvider } from '@sapiently/theme';
+import { Button } from '@sapiently/button';
 
 function App() {
   return (
@@ -90,7 +94,7 @@ function App() {
 ### Custom Theme
 
 ```tsx
-import { SapientProvider } from '@sapient/theme';
+import { SapientProvider } from '@sapiently/theme';
 
 const customTheme = {
   colors: {
@@ -101,11 +105,7 @@ const customTheme = {
 };
 
 function App() {
-  return (
-    <SapientProvider theme={customTheme}>
-      {/* Your app */}
-    </SapientProvider>
-  );
+  return <SapientProvider theme={customTheme}>{/* Your app */}</SapientProvider>;
 }
 ```
 

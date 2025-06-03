@@ -22,14 +22,8 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@sapient/*": ["packages/*/src"]
+      "@sapiently/*": ["packages/*/src"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-    "coverage",
-    "storybook-static"
-  ]
+  "exclude": ["node_modules", "dist", "build", "coverage", "storybook-static"]
 }

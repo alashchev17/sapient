@@ -6,10 +6,10 @@ This example shows how to use Sapient Design System with Next.js.
 
 ```bash
 # Install dependencies
-npm install @sapient/theme @sapient/button
+npm install @sapiently/theme @sapiently/button
 
 # Or use the workspace version (for development)
-yarn add @sapient/theme@workspace:* @sapient/button@workspace:*
+yarn add @sapiently/theme@workspace:* @sapiently/button@workspace:*
 ```
 
 ## Usage
@@ -18,19 +18,13 @@ yarn add @sapient/theme@workspace:* @sapient/button@workspace:*
 
 ```tsx
 // app/layout.tsx
-import { SapientProvider } from '@sapient/theme';
+import { SapientProvider } from '@sapiently/theme';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <SapientProvider>
-          {children}
-        </SapientProvider>
+        <SapientProvider>{children}</SapientProvider>
       </body>
     </html>
   );
@@ -41,7 +35,7 @@ export default function RootLayout({
 
 ```tsx
 // app/page.tsx
-import { Button } from '@sapient/button';
+import { Button } from '@sapiently/button';
 
 export default function Home() {
   return (
@@ -61,7 +55,7 @@ export default function Home() {
 // app/providers.tsx
 'use client';
 
-import { SapientProvider } from '@sapient/theme';
+import { SapientProvider } from '@sapiently/theme';
 
 const customTheme = {
   colors: {

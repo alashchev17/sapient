@@ -13,7 +13,8 @@
 ### 1. Update Package Names (if needed)
 
 If you want to publish under your own scope, update all package.json files:
-- Change `@sapient/` to `@yourscope/`
+
+- Change `@sapiently/` to `@yourscope/`
 - Or remove the scope to publish as `sapient-core`, `sapient-button`, etc.
 
 ### 2. Set Initial Versions
@@ -29,16 +30,19 @@ yarn changeset version
 ### Manual Publishing
 
 1. Build all packages:
+
    ```bash
    yarn build
    ```
 
 2. Create a changeset for your changes:
+
    ```bash
    yarn changeset
    ```
 
 3. Version packages:
+
    ```bash
    yarn changeset version
    ```
@@ -90,8 +94,8 @@ jobs:
         with:
           publish: yarn changeset publish
           version: yarn changeset version
-          commit: "chore: release packages"
-          title: "chore: release packages"
+          commit: 'chore: release packages'
+          title: 'chore: release packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -100,6 +104,7 @@ jobs:
 ## Setting up GitHub Secrets
 
 1. Get your npm token:
+
    ```bash
    npm token create
    ```
@@ -114,20 +119,20 @@ jobs:
 
 ```bash
 # Install core packages
-npm install @sapient/theme @sapient/button
+npm install @sapiently/theme @sapiently/button
 
 # Or with yarn
-yarn add @sapient/theme @sapient/button
+yarn add @sapiently/theme @sapiently/button
 
 # Or with pnpm
-pnpm add @sapient/theme @sapient/button
+pnpm add @sapiently/theme @sapiently/button
 ```
 
 ### Basic Usage
 
 ```tsx
-import { SapientProvider } from '@sapient/theme';
-import { Button } from '@sapient/button';
+import { SapientProvider } from '@sapiently/theme';
+import { Button } from '@sapiently/button';
 
 function App() {
   return (
@@ -141,7 +146,7 @@ function App() {
 ### With Custom Theme
 
 ```tsx
-import { SapientProvider } from '@sapient/theme';
+import { SapientProvider } from '@sapiently/theme';
 
 const customTheme = {
   colors: {
@@ -149,16 +154,12 @@ const customTheme = {
       500: '#your-color',
       600: '#your-color-dark',
       700: '#your-color-darker',
-    }
-  }
+    },
+  },
 };
 
 function App() {
-  return (
-    <SapientProvider theme={customTheme}>
-      {/* Your app */}
-    </SapientProvider>
-  );
+  return <SapientProvider theme={customTheme}>{/* Your app */}</SapientProvider>;
 }
 ```
 
@@ -171,6 +172,7 @@ function App() {
 ## Pre-release Testing
 
 1. Pack packages locally:
+
    ```bash
    cd packages/sapient-button
    npm pack
@@ -184,6 +186,7 @@ function App() {
 ## Documentation Website
 
 Consider setting up:
+
 1. **Docusaurus** for documentation site
 2. **Vercel/Netlify** for hosting
 3. **Storybook** deployment for component demos
@@ -191,6 +194,7 @@ Consider setting up:
 ## Package.json Configuration
 
 Ensure each package has:
+
 ```json
 {
   "publishConfig": {
