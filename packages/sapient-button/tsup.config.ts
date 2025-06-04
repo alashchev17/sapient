@@ -5,6 +5,6 @@ export default defineConfig({
   format: ['cjs', 'esm'],
   dts: true,
   clean: true,
-  external: ['react', 'react-dom'],
+  external: ['react', 'react-dom', '@sapiently/core', '@sapiently/design-tokens', '@sapiently/theme'],
   sourcemap: true,
 });

@@ -1,6 +1,7 @@
-import { CSSProperties } from 'react';
-import { Theme } from '@sapiently/theme';
 import { Variant, Size } from '@sapiently/core';
+import { BackgroundColors, colors } from '@sapiently/design-tokens';
+import { Theme } from '@sapiently/theme';
+import { CSSProperties } from 'react';
 
 interface ButtonStyleProps {
   theme: Theme;
@@ -8,9 +9,16 @@ interface ButtonStyleProps {
   size: Size;
   fullWidth: boolean;
   disabled: boolean;
+  bgColor: keyof BackgroundColors;
 }
 
-export const getButtonStyles = ({ theme, variant, size, fullWidth, disabled }: ButtonStyleProps): CSSProperties => {
+export const getButtonStyles = ({
+  theme,
+  variant,
+  size,
+  fullWidth,
+  disabled,
+}: ButtonStyleProps): CSSProperties => {
   const baseStyles: CSSProperties = {
     display: 'inline-flex',
     alignItems: 'center',
@@ -25,7 +33,7 @@ export const getButtonStyles = ({ theme, variant, size, fullWidth, disabled }: B
     fontFamily: theme.typography.fonts.body,
     outline: 'none',
   };
-  
+
   // Size styles
   const sizeStyles: Record<Size, CSSProperties> = {
     small: {
@@ -50,8 +58,8 @@ export const getButtonStyles = ({ theme, variant, size, fullWidth, disabled }: B
       fontSize: theme.typography.fontSizes.lg,
     },
   };
-  
-  // Variant styles  
+
+  // Variant styles
   const variantStyles: Record<Variant, CSSProperties> = {
     primary: {
       backgroundColor: theme.colors.primary[600],
@@ -78,7 +86,7 @@ export const getButtonStyles = ({ theme, variant, size, fullWidth, disabled }: B
       color: theme.colors.white,
     },
   };
-  
+
   return {
     ...baseStyles,
     ...sizeStyles[size],

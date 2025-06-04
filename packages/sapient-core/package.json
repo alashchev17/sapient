@@ -1,6 +1,6 @@
 {
   "name": "@sapiently/core",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "Core utilities and types for Sapient Design System",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
