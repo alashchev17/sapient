@@ -1,5 +1,4 @@
 import { Variant, Size } from '@sapiently/core';
-import { BackgroundColors, colors } from '@sapiently/design-tokens';
 import { Theme } from '@sapiently/theme';
 import { CSSProperties } from 'react';
 
@@ -9,7 +8,6 @@ interface ButtonStyleProps {
   size: Size;
   fullWidth: boolean;
   disabled: boolean;
-  bgColor: keyof BackgroundColors;
 }
 
 export const getButtonStyles = ({
@@ -23,66 +21,63 @@ export const getButtonStyles = ({
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontWeight: theme.typography.fontWeights.medium,
-    borderRadius: theme.radii.md,
+    fontWeight: theme.typography.p3.fontWeight,
+    borderRadius: theme.radii.bordersmall,
     transition: 'all 0.2s ease',
     border: 'none',
     cursor: disabled ? 'not-allowed' : 'pointer',
     opacity: disabled ? 0.5 : 1,
     width: fullWidth ? '100%' : 'auto',
-    fontFamily: theme.typography.fonts.body,
+    fontFamily: theme.typography.p3.fontFamily,
     outline: 'none',
   };
 
   // Size styles
   const sizeStyles: Record<Size, CSSProperties> = {
     small: {
-      paddingLeft: theme.spacing[3],
-      paddingRight: theme.spacing[3],
-      paddingTop: theme.spacing[2],
-      paddingBottom: theme.spacing[2],
-      fontSize: theme.typography.fontSizes.sm,
+      paddingLeft: theme.spacing.spacer30,
+      paddingRight: theme.spacing.spacer30,
+      paddingTop: theme.spacing.spacer20,
+      paddingBottom: theme.spacing.spacer20,
+      fontSize: theme.typography.p3.fontSize,
     },
     medium: {
-      paddingLeft: theme.spacing[4],
-      paddingRight: theme.spacing[4],
-      paddingTop: theme.spacing[2],
-      paddingBottom: theme.spacing[2],
-      fontSize: theme.typography.fontSizes.md,
+      paddingLeft: theme.spacing.spacer40,
+      paddingRight: theme.spacing.spacer40,
+      paddingTop: theme.spacing.spacer20,
+      paddingBottom: theme.spacing.spacer20,
+      fontSize: theme.typography.p2.fontSize,
     },
     large: {
-      paddingLeft: theme.spacing[6],
-      paddingRight: theme.spacing[6],
-      paddingTop: theme.spacing[3],
-      paddingBottom: theme.spacing[3],
-      fontSize: theme.typography.fontSizes.lg,
+      paddingLeft: theme.spacing.spacer60,
+      paddingRight: theme.spacing.spacer60,
+      paddingTop: theme.spacing.spacer30,
+      paddingBottom: theme.spacing.spacer30,
+      fontSize: theme.typography.p1.fontSize,
     },
   };
 
   // Variant styles
   const variantStyles: Record<Variant, CSSProperties> = {
     primary: {
-      backgroundColor: theme.colors.primary[600],
+      backgroundColor: theme.colors.button.BackgroundPrimaryDefault,
       color: theme.colors.white,
     },
     secondary: {
-      backgroundColor: theme.colors.gray[200],
+      backgroundColor: theme.colors.button.BackgroundSecondary,
+      color: theme.colors.gray[900],
+    },
+    // @ts-expect-error will be fixed in the future
+    tertiary: {
+      backgroundColor: theme.colors.button.BackgroundTertiaryDefault,
       color: theme.colors.gray[900],
     },
     danger: {
-      backgroundColor: theme.colors.error.main,
-      color: theme.colors.white,
-    },
-    warning: {
-      backgroundColor: theme.colors.warning.main,
+      backgroundColor: theme.colors.button.BackgroundDestructiveDefault,
       color: theme.colors.white,
     },
     success: {
-      backgroundColor: theme.colors.success.main,
-      color: theme.colors.white,
-    },
-    neutral: {
-      backgroundColor: theme.colors.gray[600],
+      backgroundColor: theme.colors.button.BackgroundSuccessDefault,
       color: theme.colors.white,
     },
   };

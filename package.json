@@ -1,11 +1,11 @@
 {
-  "name": "sapient",
+  "name": "sapiently",
   "version": "0.0.0",
   "private": true,
-  "description": "Sapient - A modern design system implementation for React",
+  "description": "Sapiently - A modern design system implementation for React",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/sapient.git"
+    "url": "https://github.com/yourusername/sapiently.git"
   },
   "license": "MIT",
   "workspaces": [
@@ -28,7 +28,9 @@
     "start:storybook": "yarn workspace @sapiently/storybook start",
     "build:storybook": "yarn workspace @sapiently/storybook build",
     "packages:check": "node scripts/check-peer-deps.js",
-    "packages:fix": "node scripts/fix-peer-deps.js"
+    "packages:fix": "node scripts/fix-peer-deps.js",
+    "generate:tokens": "tsx scripts/generate-design-tokens.ts",
+    "tokens:build": "yarn generate:tokens && yarn build:packages"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
@@ -56,7 +58,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.0",
+    "ts-node": "^10.9.2",
     "tsup": "^7.2.0",
+    "tsx": "^4.19.4",
     "typescript": "^5.2.0"
   },
   "engines": {

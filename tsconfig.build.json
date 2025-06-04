@@ -1,20 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "tsBuildInfoFile": "./dist/.tsbuildinfo"
+    "paths": {}
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-    "coverage",
-    "storybook-static",
-    "**/*.test.ts",
-    "**/*.test.tsx",
-    "**/*.stories.ts",
-    "**/*.stories.tsx",
-    "**/__tests__/**"
-  ]
+  "exclude": ["node_modules", "dist", "build", "coverage", "storybook-static", "**/*.test.*", "**/*.spec.*"]
 }

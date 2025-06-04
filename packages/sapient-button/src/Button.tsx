@@ -32,13 +32,12 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     const styles = getButtonStyles({ theme, variant, size, fullWidth, disabled });
 
     // Add hover styles
+    // @ts-expect-error will be fixed
     const hoverStyles: Record<Variant, CSSProperties> = {
-      primary: { backgroundColor: theme.colors.primary[700] },
-      secondary: { backgroundColor: theme.colors.gray[300] },
-      danger: { backgroundColor: theme.colors.error.dark },
-      warning: { backgroundColor: theme.colors.warning.dark },
-      success: { backgroundColor: theme.colors.success.dark },
-      neutral: { backgroundColor: theme.colors.gray[700] },
+      primary: { backgroundColor: theme.colors.button.BackgroundPrimaryHover },
+      secondary: { backgroundColor: theme.colors.button.BackgroundSecondaryHover },
+      danger: { backgroundColor: theme.colors.button.BackgroundDestructiveHover },
+      success: { backgroundColor: theme.colors.button.BackgroundSuccessHover },
     };
 
     const combinedStyles: CSSProperties = {

@@ -1,0 +1,37 @@
+{
+  "primary-50": {
+    "type": "color",
+    "value": "#e3f2fd",
+    "description": "Primary color 50"
+  },
+  "primary-500": {
+    "type": "color", 
+    "value": "#2196f3",
+    "description": "Primary color 500"
+  },
+  "spacing-4": {
+    "type": "dimension",
+    "value": "1rem",
+    "description": "Base spacing unit"
+  },
+  "spacing-8": {
+    "type": "dimension", 
+    "value": "2rem",
+    "description": "Double spacing unit"
+  },
+  "border-radius-md": {
+    "type": "borderRadius",
+    "value": "0.375rem",
+    "description": "Medium border radius"
+  },
+  "shadow-base": {
+    "type": "shadow",
+    "value": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "description": "Base shadow"
+  },
+  "font-size-md": {
+    "type": "fontSize",
+    "value": "1rem",
+    "description": "Medium font size"
+  }
+}

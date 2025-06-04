@@ -25,5 +25,5 @@ export interface SapientProps<T = HTMLDivElement> extends HTMLAttributes<T>, Sty
   sx?: CSSProperties;
 }
 
-export type Variant = 'primary' | 'secondary' | 'danger' | 'warning' | 'success' | 'neutral';
+export type Variant = 'primary' | 'secondary' | 'tertiary' | 'danger' | 'warning' | 'success';
 export type Size = 'small' | 'medium' | 'large';

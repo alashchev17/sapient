@@ -9,10 +9,10 @@
     "clean": "rimraf storybook-static .turbo"
   },
   "dependencies": {
-    "@sapiently/button": "^1.0.0",
-    "@sapiently/core": "^0.1.0",
-    "@sapiently/design-tokens": "^0.1.0",
-    "@sapiently/theme": "^1.0.0",
+    "@sapiently/button": "workspace:*",
+    "@sapiently/core": "workspace:*",
+    "@sapiently/design-tokens": "workspace:*",
+    "@sapiently/theme": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
