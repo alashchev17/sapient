@@ -1,6 +1,6 @@
 {
   "name": "@sapiently/skeleton",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "Skeleton component for Sapient Design System",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -15,7 +15,7 @@
   },
   "peerDependencies": {
     "@emotion/react": "^11.11.1",
-    "@sapiently/primitives": "^0.1.0",
+    "@sapiently/primitives": "^1.0.1",
     "react": "^17.0.2 || ^18.0.0",
     "react-dom": "^17.0.2 || ^18.0.0"
   },
