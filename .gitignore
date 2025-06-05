@@ -45,5 +45,3 @@ lerna-debug.log*
 *.tmp
 *.temp
 .cache/
-
-yarn.lock
