@@ -370,7 +370,10 @@ async function generateDesignTokens() {
         category = 'radii';
       } else if (collectionName === 'typography' || collectionName === 'display-typography') {
         category = 'typography';
-      } else if (token.type === 'custom-shadow' || collectionName.includes('effect')) {
+      } else if (token.type === 'custom-shadow' || collectionName.includes('effect') || collectionName.includes('shadow')) {
+        category = 'shadows';
+      } else if (Object.keys(token).some(key => /^\d+$/.test(key) && token[key]?.type === 'custom-shadow')) {
+        // Handle shadow tokens with numbered sub-objects (Figma Design Tokens plugin format)
         category = 'shadows';
       } else if (token.type === 'dimension') {
         // Check if it's a typography-related dimension based on token name
@@ -403,19 +406,36 @@ async function generateDesignTokens() {
       }
 
       // Handle shadow tokens (can have multiple shadow values)
-      if (category === 'shadows' && token.type === 'custom-shadow') {
-        if (typeof token.value === 'object' && token.value.shadowType) {
-          // Single shadow
-          const shadow = token.value;
-          processedValue = `${shadow.offsetX}px ${shadow.offsetY}px ${shadow.radius}px ${shadow.spread || 0}px ${shadow.color}`;
-        } else if (Array.isArray(token.value)) {
-          // Multiple shadows
-          processedValue = token.value
-            .map(
-              (shadow: any) =>
-                `${shadow.offsetX}px ${shadow.offsetY}px ${shadow.radius}px ${shadow.spread || 0}px ${shadow.color}`
-            )
+      if (category === 'shadows') {
+        // Handle numbered sub-objects (Figma Design Tokens plugin format)
+        const shadowSubObjects = Object.keys(token)
+          .filter(key => /^\d+$/.test(key)) // Only numbered keys like "0", "1", "2", etc.
+          .map(key => token[key])
+          .filter(subToken => subToken?.type === 'custom-shadow' && subToken?.value);
+
+        if (shadowSubObjects.length > 0) {
+          // Multiple shadows from numbered sub-objects
+          processedValue = shadowSubObjects
+            .map((subToken: any) => {
+              const shadow = subToken.value;
+              return `${shadow.offsetX}px ${shadow.offsetY}px ${shadow.radius}px ${shadow.spread || 0}px ${shadow.color}`;
+            })
             .join(', ');
+        } else if (token.type === 'custom-shadow') {
+          // Handle legacy shadow token formats
+          if (typeof token.value === 'object' && token.value.shadowType) {
+            // Single shadow
+            const shadow = token.value;
+            processedValue = `${shadow.offsetX}px ${shadow.offsetY}px ${shadow.radius}px ${shadow.spread || 0}px ${shadow.color}`;
+          } else if (Array.isArray(token.value)) {
+            // Multiple shadows in array format
+            processedValue = token.value
+              .map(
+                (shadow: any) =>
+                  `${shadow.offsetX}px ${shadow.offsetY}px ${shadow.radius}px ${shadow.spread || 0}px ${shadow.color}`
+              )
+              .join(', ');
+          }
         }
       }
 

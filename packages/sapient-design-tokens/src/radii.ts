@@ -1,7 +1,8 @@
 export const radii = {
-  bordersmall: '0.5rem',
-  bordermedium: '1rem',
-  borderlarge: '2rem',
+  border4: '0.25rem',
+  border8: '0.5rem',
+  border16: '1rem',
+  border32: '2rem',
 } as const;
 
 export type RadiiToken = keyof typeof radii;

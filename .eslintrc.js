@@ -1,5 +1,16 @@
 module.exports = {
   root: true,
+  ignorePatterns: [
+    'dist/',
+    'build/',
+    'lib/',
+    'storybook-static/',
+    '.cache/',
+    'node_modules/',
+    '*.min.js',
+    '*.bundle.js',
+    'coverage/',
+  ],
   env: {
     browser: true,
     es2021: true,
@@ -33,17 +44,9 @@ module.exports = {
     'react/prop-types': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'warn',
-    'import/order': [
-      'error',
-      {
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-        'newlines-between': 'always',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-      },
-    ],
+    // Allow Emotion's css prop
+    'react/no-unknown-property': ['error', { ignore: ['css'] }],
+    'import/order': 'off',
   },
   overrides: [
     {

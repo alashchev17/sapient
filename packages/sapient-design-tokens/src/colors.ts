@@ -21,11 +21,13 @@ export const colors = {
     '800': '#8a2423ff',
   },
   blue: {
+    '100': '#d2e8ffff',
     '200': '#b7d3eeff',
     '500': '#61aaf2ff',
     '700': '#3889ddff',
   },
   green: {
+    '100': '#e2f5e1ff',
     '200': '#e9f1e9ff',
     '500': '#6bb765ff',
     '700': '#468040ff',

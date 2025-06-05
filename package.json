@@ -5,7 +5,7 @@
   "description": "Sapiently - A modern design system implementation for React",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/sapiently.git"
+    "url": "https://github.com/alashchev17/sapiently.git"
   },
   "license": "MIT",
   "workspaces": [

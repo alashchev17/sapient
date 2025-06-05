@@ -1,7 +1,7 @@
 export const shadows = {
   shadowsmall: '0px 2px 6px 0px #e5e4dfff',
-  shadowmedium: undefined,
-  shadowlarge: undefined,
+  shadowmedium: '0px 10px 20px 0px #e5e4dfff, 0px 0px 4px 0px #e5e4dfff',
+  shadowlarge: '0px 24px 24px 0px #e5e4dfff, 0px -2px 10px 0px #e5e4dfff',
 } as const;
 
 export type ShadowToken = keyof typeof shadows;

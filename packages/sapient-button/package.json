@@ -1,6 +1,6 @@
 {
   "name": "@sapiently/button",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Button component for Sapient Design System",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,16 +14,20 @@
     "clean": "rimraf dist .turbo"
   },
   "peerDependencies": {
-    "@sapiently/core": "^0.2.1",
-    "@sapiently/design-tokens": "^0.2.1",
-    "@sapiently/theme": "^0.2.1",
+    "@sapiently/core": "^0.3.0",
+    "@sapiently/design-tokens": "^0.3.0",
+    "@sapiently/theme": "^0.3.0",
     "react": "^17.0.2 || ^18.0.0",
     "react-dom": "^17.0.2 || ^18.0.0"
   },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0"
+  },
   "devDependencies": {
-    "@sapiently/core": "workspace:*",
-    "@sapiently/design-tokens": "workspace:*",
-    "@sapiently/theme": "workspace:*",
+    "@sapiently/core": "^0.3.0",
+    "@sapiently/design-tokens": "^0.3.0",
+    "@sapiently/theme": "^0.3.0",
     "tsup": "^7.2.0"
   },
   "publishConfig": {

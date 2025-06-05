@@ -1,7 +1,7 @@
-import { Button } from '@sapiently/button';
+import { Button, type ButtonProps } from '@sapiently/button';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta: Meta<typeof Button> = {
+const meta: Meta<ButtonProps> = {
   title: 'Components/Button',
   component: Button,
   parameters: {
@@ -11,16 +11,16 @@ const meta: Meta<typeof Button> = {
   argTypes: {
     variant: {
       control: 'select',
-      options: ['primary', 'secondary', 'danger', 'warning', 'success', 'neutral'],
+      options: ['primary', 'secondary', 'tertiary', 'danger', 'success'],
     },
     size: {
       control: 'select',
       options: ['small', 'medium', 'large'],
     },
-    fullWidth: {
+    disabled: {
       control: 'boolean',
     },
-    disabled: {
+    loading: {
       control: 'boolean',
     },
   },
@@ -43,10 +43,24 @@ export const Secondary: Story = {
   },
 };
 
+export const Tertiary: Story = {
+  args: {
+    children: 'Button',
+    variant: 'tertiary',
+  },
+};
+
 export const Danger: Story = {
   args: {
-    children: 'Delete',
+    children: 'Button',
     variant: 'danger',
+  },
+};
+
+export const Success: Story = {
+  args: {
+    children: 'Button',
+    variant: 'success',
   },
 };
 
@@ -64,16 +78,16 @@ export const Small: Story = {
   },
 };
 
-export const FullWidth: Story = {
-  args: {
-    children: 'Full Width Button',
-    fullWidth: true,
-  },
-};
-
 export const Disabled: Story = {
   args: {
     children: 'Disabled Button',
     disabled: true,
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    children: 'Saving...',
+    loading: true,
   },
 };

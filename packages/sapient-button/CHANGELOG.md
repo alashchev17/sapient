@@ -1,5 +1,18 @@
 # @sapiently/button
 
+## 1.0.0
+
+### Minor Changes
+
+- updated tokens, core, theme and button packages, button variants implemented and custom theming removed
+
+### Patch Changes
+
+- Updated dependencies
+  - @sapiently/design-tokens@0.3.0
+  - @sapiently/theme@1.0.0
+  - @sapiently/core@0.3.0
+
 ## 0.2.1
 
 ### Patch Changes

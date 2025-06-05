@@ -9,7 +9,7 @@ This example shows how to use Sapient Design System with Next.js.
 npm install @sapiently/theme @sapiently/button
 
 # Or use the workspace version (for development)
-yarn add @sapiently/theme@workspace:* @sapiently/button@workspace:*
+yarn add @sapiently/theme@^0.2.1 @sapiently/button@^0.2.1
 ```
 
 ## Usage

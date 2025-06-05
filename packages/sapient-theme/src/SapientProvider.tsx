@@ -1,16 +1,15 @@
-import { mergeDeep } from '@sapiently/core';
 import React, { ReactNode } from 'react';
 
 import { defaultTheme } from './defaultTheme';
 import { ThemeContext } from './ThemeContext';
-import { Theme, ThemeConfig } from './types';
 
-interface SapientProviderProps extends ThemeConfig {
+interface SapientProviderProps {
   children: ReactNode;
 }
 
-export const SapientProvider: React.FC<SapientProviderProps> = ({ children, theme = {} }) => {
-  const mergedTheme = mergeDeep(defaultTheme, theme) as Theme;
+export const SapientProvider: React.FC<SapientProviderProps> = ({ children }) => {
+  // TODO: might be used in the future for theme customization, if needed
+  // const mergedTheme = mergeDeep(defaultTheme, theme) as Theme;
 
-  return <ThemeContext.Provider value={mergedTheme}>{children}</ThemeContext.Provider>;
+  return <ThemeContext.Provider value={defaultTheme}>{children}</ThemeContext.Provider>;
 };
