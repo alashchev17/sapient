@@ -1,5 +1,11 @@
 # @sapiently/core
 
+## 1.0.2
+
+### Patch Changes
+
+- eeyup, party
+
 ## 1.0.1
 
 ### Patch Changes

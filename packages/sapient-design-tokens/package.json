@@ -1,6 +1,7 @@
 {
+  "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/package.json",
   "name": "@sapiently/design-tokens",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Design tokens for Sapient Design System",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

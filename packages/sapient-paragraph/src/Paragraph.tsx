@@ -6,8 +6,8 @@ export interface ParagraphProps extends Omit<TextProps, 'variant'> {
    * Size variant for the paragraph
    * @default 'medium'
    */
-  size?: 'small' | 'medium' | 'large';
-  
+  size?: '1' | '2' | '3';
+
   /**
    * Bottom margin spacing
    * @default 'spacer40'
@@ -16,14 +16,18 @@ export interface ParagraphProps extends Omit<TextProps, 'variant'> {
 }
 
 export const Paragraph = forwardRef<HTMLElement, ParagraphProps>(
-  ({ size = 'medium', marginBottom = 'spacer40', as = 'p', ...props }, ref) => {
+  ({ size = '2', marginBottom = 'spacer40', as = 'p', ...props }, ref) => {
     // Map size to typography variant
     const getVariant = () => {
       switch (size) {
-        case 'small': return 'p3';
-        case 'medium': return 'p1';
-        case 'large': return 'p1'; // Could map to a larger variant if available
-        default: return 'p1';
+        case '1':
+          return 'p3';
+        case '2':
+          return 'p2';
+        case '3':
+          return 'p1'; // Could map to a larger variant if available
+        default:
+          return 'p1';
       }
     };
 

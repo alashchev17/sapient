@@ -1,5 +1,13 @@
 # @sapiently/stack
 
+## 1.0.2
+
+### Patch Changes
+
+- eeyup, party
+- Updated dependencies
+  - @sapiently/primitives@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes

@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/package.json",
-  "name": "@sapiently/button",
-  "version": "1.0.2",
-  "description": "Button component for Sapient Design System",
+  "name": "@sapiently/callout",
+  "version": "1.0.1",
+  "description": "Callout component for Sapient Design System",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,6 +17,8 @@
   "peerDependencies": {
     "@sapiently/core": "^1.0.2",
     "@sapiently/design-tokens": "^1.0.2",
+    "@sapiently/icons": "^1.0.1",
+    "@sapiently/primitives": "^1.0.2",
     "@sapiently/theme": "^1.0.2",
     "react": "^17.0.2 || ^18.0.0",
     "react-dom": "^17.0.2 || ^18.0.0"
@@ -28,6 +30,8 @@
   "devDependencies": {
     "@sapiently/core": "^1.0.2",
     "@sapiently/design-tokens": "^1.0.2",
+    "@sapiently/icons": "^1.0.1",
+    "@sapiently/primitives": "^1.0.2",
     "@sapiently/theme": "^1.0.2",
     "tsup": "^7.2.0"
   },

@@ -1,5 +1,15 @@
 # @sapiently/button
 
+## 1.0.2
+
+### Patch Changes
+
+- eeyup, party
+- Updated dependencies
+  - @sapiently/design-tokens@1.0.2
+  - @sapiently/theme@1.0.2
+  - @sapiently/core@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes

@@ -9,6 +9,7 @@ export const spacing = {
   spacer50: '1.25rem',
   spacer70: '1.75rem',
   spacer90: '2.25rem',
+  spacer0: '0rem',
 } as const;
 
 export type SpacingToken = keyof typeof spacing;
