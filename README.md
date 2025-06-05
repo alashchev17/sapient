@@ -7,7 +7,7 @@ Sapient is a modern design system implementation for React, built with accessibi
 - 🎨 **Comprehensive token system** - Colors, typography, spacing, shadows, and more
 - 📦 **Modular architecture** - Pick only what you need
 - 🚀 **TypeScript first** - Full type safety and IntelliSense support
-- ♿ **Accessible by default** - WCAG 2.1 AA compliant components
+<!-- - ♿ **Accessible by default** - WCAG 2.1 AA compliant components -->
 - 🎯 **Developer focused** - Great DX with detailed documentation
 - 🔧 **Customizable** - Extend and customize to match your brand
 - 📖 **Storybook integration** - Interactive component playground
@@ -17,7 +17,7 @@ Sapient is a modern design system implementation for React, built with accessibi
 ### Prerequisites
 
 - Node.js >= 18.0.0
-- Yarn >= 3.0.0
+- Yarn >= 4.0.0
 
 ### Installation
 
@@ -88,24 +88,6 @@ function App() {
       <Button variant="primary">Click me</Button>
     </SapientProvider>
   );
-}
-```
-
-### Custom Theme
-
-```tsx
-import { SapientProvider } from '@sapiently/theme';
-
-const customTheme = {
-  colors: {
-    primary: {
-      500: '#your-brand-color',
-    },
-  },
-};
-
-function App() {
-  return <SapientProvider theme={customTheme}>{/* Your app */}</SapientProvider>;
 }
 ```
 
