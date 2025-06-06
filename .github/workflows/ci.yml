@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-and-test:
-    name: Build and Test
+    name: Build CI
     runs-on: ubuntu-latest
 
     steps:
@@ -28,7 +28,7 @@ jobs:
       - run: corepack enable
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: yarn install
 
       - name: Lint
         run: yarn lint
