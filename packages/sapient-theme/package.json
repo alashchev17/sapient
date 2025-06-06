@@ -1,12 +1,15 @@
 {
   "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/package.json",
   "name": "@sapiently/theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Theme provider and utilities for Sapient Design System",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "sideEffects": false,
+  "sideEffects": [
+    "./src/fonts/fonts.css",
+    "./dist/fonts/fonts.css"
+  ],
   "files": [
     "dist"
   ],

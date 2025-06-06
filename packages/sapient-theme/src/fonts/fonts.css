@@ -1,0 +1,258 @@
+/* Test Tiempos Text Font Family */
+@font-face {
+  font-family: 'Test Tiempos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./TestTiemposText-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Test Tiempos Text';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./TestTiemposText-RegularItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Test Tiempos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./TestTiemposText-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Test Tiempos Text';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./TestTiemposText-MediumItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Test Tiempos Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./TestTiemposText-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Test Tiempos Text';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./TestTiemposText-SemiboldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Test Tiempos Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./TestTiemposText-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Test Tiempos Text';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./TestTiemposText-BoldItalic.woff2') format('woff2');
+}
+
+/* Styrene A Trial Font Family */
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('./StyreneA-Thin-Trial-BF63f6cbd91263f.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url('./StyreneA-ThinItalic-Trial-BF63f6cbd95634b.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./StyreneA-Light-Trial-BF63f6cbd99dc3e.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./StyreneA-LightItalic-Trial-BF63f6cbd9cb933.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./StyreneA-Regular-Trial-BF63f6cbd970ee9.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./StyreneA-RegularItalic-Trial-BF63f6cbd94325f.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./StyreneA-Medium-Trial-BF63f6cbdb24b6d.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./StyreneA-MediumItalic-Trial-BF63f6cbd925a68.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./StyreneA-Bold-Trial-BF63f6cbda1877f.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./StyreneA-BoldItalic-Trial-BF63f6cbd9bec08.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./StyreneA-Black-Trial-BF63f6cbd9da245.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A Trial';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./StyreneA-BlackItalic-Trial-BF63f6cbd7cb688.woff2') format('woff2');
+}
+
+/* Styrene B Trial Font Family */
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('./StyreneB-Thin-Trial-BF63f6cc84a4246.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url('./StyreneB-ThinItalic-Trial-BF63f6cbe8d3333.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./StyreneB-Light-Trial-BF63f6cbe64b47b.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./StyreneB-LightItalic-Trial-BF63f6cbe9d67d1.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./StyreneB-Regular-Trial-BF63f6cbe9db1d5.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./StyreneB-RegularItalic-Trial-BF63f6cbe5c1942.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./StyreneB-Medium-Trial-BF63f6cc85760c2.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./StyreneB-MediumItalic-Trial-BF63f6cc84a421a.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./StyreneB-Bold-Trial-BF63f6cbe9f13bb.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./StyreneB-BoldItalic-Trial-BF63f6cbe6863e6.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./StyreneB-Black-Trial-BF63f6cbe3dc69b.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene B Trial';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./StyreneB-BlackItalic-Trial-BF63f6cbe2d985b.woff2') format('woff2');
+}

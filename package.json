@@ -15,6 +15,7 @@
   ],
   "scripts": {
     "build": "yarn workspaces foreach -ptA run build",
+    "build:bash": "bash scripts/build.sh",
     "build:packages": "yarn workspaces foreach -A -t --include '@sapiently/*' run build",
     "clean": "yarn workspaces foreach -ptA run clean && rimraf node_modules .yarn",
     "clean:packages": "yarn workspaces foreach -ptA --include '@sapiently/*' run clean",

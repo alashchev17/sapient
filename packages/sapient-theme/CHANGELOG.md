@@ -1,5 +1,11 @@
 # @sapiently/theme
 
+## 1.0.3
+
+### Patch Changes
+
+- including typography fonts in the theme package bundle
+
 ## 1.0.2
 
 ### Patch Changes
