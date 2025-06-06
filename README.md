@@ -115,4 +115,4 @@ Follow the prompts to describe your changes.
 
 ## License
 
-MIT © [Your Organization]
+MIT © Sapiently
