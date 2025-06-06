@@ -3718,7 +3718,7 @@ __metadata:
     "@sapiently/button": "npm:^1.0.2"
     "@sapiently/core": "npm:^1.0.2"
     "@sapiently/design-tokens": "npm:^1.0.2"
-    "@sapiently/theme": "npm:^1.0.2"
+    "@sapiently/theme": "npm:^1.0.3"
     "@storybook/addon-essentials": "npm:^7.5.0"
     "@storybook/addon-interactions": "npm:^7.5.0"
     "@storybook/addon-links": "npm:^7.5.0"
@@ -3733,7 +3733,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sapiently/theme@npm:^1.0.2, @sapiently/theme@workspace:packages/sapient-theme":
+"@sapiently/theme@npm:^1.0.2, @sapiently/theme@npm:^1.0.3, @sapiently/theme@workspace:packages/sapient-theme":
   version: 0.0.0-use.local
   resolution: "@sapiently/theme@workspace:packages/sapient-theme"
   dependencies:
