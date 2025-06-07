@@ -1,5 +1,11 @@
 # @sapiently/skeleton
 
+## 2.1.0
+
+### Minor Changes
+
+- circular variant fixed
+
 ## 2.0.0
 
 ### Patch Changes
