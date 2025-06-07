@@ -7,7 +7,7 @@ Sapient is a modern design system implementation for React, built with accessibi
 - 🎨 **Comprehensive token system** - Colors, typography, spacing, shadows, and more
 - 📦 **Modular architecture** - Pick only what you need
 - 🚀 **TypeScript first** - Full type safety and IntelliSense support
-<!-- - ♿ **Accessible by default** - WCAG 2.1 AA compliant components -->
+- ♿ **Accessible by default** - WCAG 2.1 AA compliant components
 - 🎯 **Developer focused** - Great DX with detailed documentation
 - 🔧 **Customizable** - Extend and customize to match your brand
 - 📖 **Storybook integration** - Interactive component playground
