@@ -1,6 +1,6 @@
-# Sapient
+# Sapiently
 
-Sapient is a modern design system implementation for React, built with accessibility, consistency, and developer experience in mind. Inspired by industry-leading design systems like Twilio's Paste.
+Sapiently is a modern design system implementation for React, built with accessibility, consistency, and developer experience in mind. Inspired by industry-leading design systems like Twilio's Paste.
 
 ## Features
 
@@ -24,8 +24,8 @@ Sapient is a modern design system implementation for React, built with accessibi
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-org/sapient.git
-cd sapient
+git clone https://github.com/alashchev17/sapiently.git
+cd sapiently
 ```
 
 2. Install dependencies:
@@ -37,7 +37,7 @@ yarn install
 3. Build all packages:
 
 ```bash
-yarn build
+yarn build:bash
 ```
 
 4. Start Storybook:
@@ -50,7 +50,7 @@ yarn start:storybook
 
 ### Available Commands
 
-- `yarn build` - Build all packages
+- `yarn build:bash` - Build all packages in synchronize and ordered way
 - `yarn dev` - Build packages and start Storybook
 - `yarn test` - Run tests
 - `yarn lint` - Lint code
