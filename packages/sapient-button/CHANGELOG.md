@@ -1,5 +1,16 @@
 # @sapiently/button
 
+## 2.0.0
+
+### Minor Changes
+
+- theme default cleanup styles, button a11y spec & new icons
+
+### Patch Changes
+
+- Updated dependencies
+  - @sapiently/theme@1.1.0
+
 ## 1.0.2
 
 ### Patch Changes

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/package.json",
+  "name": "@sapiently/anchor",
+  "version": "2.0.0",
+  "description": "Anchor (link) component for Sapient Design System",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf dist .turbo"
+  },
+  "peerDependencies": {
+    "@sapiently/core": "^1.0.2",
+    "@sapiently/design-tokens": "^1.0.2",
+    "@sapiently/theme": "^1.1.0",
+    "react": "^17.0.2 || ^18.0.0",
+    "react-dom": "^17.0.2 || ^18.0.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0"
+  },
+  "devDependencies": {
+    "@sapiently/core": "^1.0.2",
+    "@sapiently/design-tokens": "^1.0.2",
+    "@sapiently/theme": "^1.1.0",
+    "tsup": "^7.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

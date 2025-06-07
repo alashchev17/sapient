@@ -1,5 +1,13 @@
 # @sapiently/list
 
+## 2.0.0
+
+### Patch Changes
+
+- Updated dependencies
+  - @sapiently/theme@1.1.0
+  - @sapiently/primitives@2.0.0
+
 ## 1.0.1
 
 ### Patch Changes

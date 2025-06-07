@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import './fonts/fonts.css';
+import './theme.css';
 
 import { defaultTheme } from './defaultTheme';
 import { ThemeContext } from './ThemeContext';

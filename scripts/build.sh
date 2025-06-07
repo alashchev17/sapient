@@ -45,6 +45,15 @@ build_package "@sapiently/stack" "Stack"
 build_package "@sapiently/button" "Button"
 build_package "@sapiently/callout" "Callout"
 
+# Build new components (dependencies first)
+build_package "@sapiently/help-text" "Help Text"
+build_package "@sapiently/text-input" "Text Input"
+build_package "@sapiently/radio-group" "Radio Group"
+build_package "@sapiently/combobox" "Combobox"
+build_package "@sapiently/anchor" "Anchor"
+build_package "@sapiently/tabs" "Tabs"
+build_package "@sapiently/pagination" "Pagination"
+
 echo -e "${GREEN}🎉 All packages built successfully!${NC}"
 echo "=================================="
 

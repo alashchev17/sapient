@@ -13,6 +13,10 @@ export interface ButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement
   iconPosition?: IconPosition;
   loading?: boolean;
   shape?: ButtonShape;
+  /**
+   * Accessible label for icon-only buttons (required when using icon-only)
+   */
+  'aria-label'?: string;
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -96,12 +100,16 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     };
 
     return (
+      // eslint-disable-next-line jsx-a11y/no-redundant-roles
       <button
         ref={ref}
         type={type}
         css={buttonStyles}
         disabled={disabled || loading}
         aria-busy={loading}
+        aria-disabled={disabled || loading}
+        aria-label={kind === 'icon-only' ? props['aria-label'] : undefined}
+        role="button"
         {...props}
       >
         {renderContent()}

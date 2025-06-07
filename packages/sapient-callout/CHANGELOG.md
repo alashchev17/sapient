@@ -1,5 +1,14 @@
 # @sapiently/callout
 
+## 2.0.0
+
+### Patch Changes
+
+- Updated dependencies
+  - @sapiently/icons@1.1.0
+  - @sapiently/theme@1.1.0
+  - @sapiently/primitives@2.0.0
+
 ## 1.0.1
 
 ### Patch Changes

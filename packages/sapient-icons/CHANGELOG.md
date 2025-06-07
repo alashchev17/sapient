@@ -1,5 +1,11 @@
 # @sapiently/icons
 
+## 1.1.0
+
+### Minor Changes
+
+- theme default cleanup styles, button a11y spec & new icons
+
 ## 1.0.1
 
 ### Patch Changes

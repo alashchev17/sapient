@@ -1,0 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+legend {
+  margin: 0;
+  padding: 0;
+}

@@ -1,5 +1,11 @@
 # @sapiently/paragraph
 
+## 2.0.0
+
+### Patch Changes
+
+- @sapiently/primitives@2.0.0
+
 ## 1.0.2
 
 ### Patch Changes
