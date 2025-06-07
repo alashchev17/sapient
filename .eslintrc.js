@@ -10,6 +10,7 @@ module.exports = {
     '*.min.js',
     '*.bundle.js',
     'coverage/',
+    '*.stories.tsx',
   ],
   env: {
     browser: true,

@@ -23,7 +23,9 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
       readOnly = false,
       rows = 4,
       resize = true,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       prefix, // Extract and ignore prefix
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       suffix, // Extract and ignore suffix
       ...props
     },
@@ -97,8 +99,6 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
       return helpText;
     };
 
-
-
     const displayedHelpText = getHelpText();
 
     return (
@@ -138,7 +138,13 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
         {displayedHelpText && (
           <HelpText
             id={helpTextId}
-            variant={currentState === 'error' ? 'error' : currentState === 'success' ? 'success' : 'default'}
+            variant={
+              currentState === 'error'
+                ? 'error'
+                : currentState === 'success'
+                  ? 'success'
+                  : 'default'
+            }
           >
             {displayedHelpText}
           </HelpText>
